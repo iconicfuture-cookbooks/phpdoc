@@ -18,7 +18,7 @@ php_pear "PEAR" do
 	action :upgrade
 end
 
-#phpdoc PEAR channel
+#phpDocumentor PEAR channel
 pearhub_chan = php_pear_channel "pear.phpdoc.org" do
 	action :discover
 end
