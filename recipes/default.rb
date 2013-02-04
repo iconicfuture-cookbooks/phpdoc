@@ -24,7 +24,7 @@ pearhub_chan = php_pear_channel "pear.phpdoc.org" do
 end
 
 #upgrade phpDocumentor
-php_pear "phpDocumentor-alpha" do
+php_pear "phpDocumentor" do
 	channel pearhub_chan.channel_name
 	if node[:phpdoc][:version] != "latest"
 		version "#{node[:phpdoc][:version]}"
