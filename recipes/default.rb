@@ -29,5 +29,5 @@ php_pear "phpDocumentor" do
 	if node[:phpdoc][:version] != "latest"
 		version "#{node[:phpdoc][:version]}"
 	end
-	action :upgrade
+	action :upgrade if node[:phpdoc][:version] == "latest"
 end
