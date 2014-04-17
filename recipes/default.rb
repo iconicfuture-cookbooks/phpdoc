@@ -28,11 +28,14 @@ pearhub_chan = php_pear_channel "pear.phpdoc.org" do
 	action :discover
 end
 
-#upgrade phpDocumentor
-php_pear "phpDocumentor" do
+#install/upgrade phpDocumentor
+package = "phpDocumentor"
+
+php_pear package do
 	channel pearhub_chan.channel_name
 	if node[:phpdoc][:version] != "latest"
 		version "#{node[:phpdoc][:version]}"
 	end
-	action if node[:phpdoc][:version] == "latest" ? :upgrade : :install
+	#upgrade when package is installed and latest version is required
+	action ( !(`pear list | grep #{package}`.empty?) and node[:phpdoc][:version] == "latest" ) ? :upgrade : :install
 end
