@@ -12,6 +12,7 @@ Requirements
 ## Cookbooks:
 
 * php
+* composer
 
 ## Platforms:
 
@@ -26,7 +27,9 @@ Requirements
 Attributes
 ==========
 
+* `node['phpdoc']['install_method']` - Installation method, "pear", "composer" or "phar", defaults to "pear"
 * `node['phpdoc']['version']` - The phpdoc version that will be installed, defaults to "latest"
+* `node['phpdoc']['prefix']` - The composer.json bin-dir, defaults to "/usr/bin" (composer install method only)
 
 Usage
 =====
