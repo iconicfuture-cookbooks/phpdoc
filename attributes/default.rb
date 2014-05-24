@@ -5,5 +5,5 @@
 # Copyright 2013-2014, Escape Studios
 #
 
-default['phpdoc']['install_method'] = "pear"
-default['phpdoc']['version'] = "latest"
+default['phpdoc']['install_method'] = 'composer'
+default['phpdoc']['version'] = 'latest'

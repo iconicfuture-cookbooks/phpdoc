@@ -48,9 +48,9 @@ References
 License and Authors
 ===================
 
-Author: David Joos <david@escapestudios.com>
+Author: David Joos <david.joos@escapestudios.com>
 Author: Escape Studios Development <dev@escapestudios.com>
-Copyright: 2013, Escape Studios
+Copyright: 2013-2014, Escape Studios
 
 Unless otherwise noted, all files are released under the MIT license,
 possible exceptions will contain licensing information in them.
