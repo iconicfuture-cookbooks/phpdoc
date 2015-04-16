@@ -12,6 +12,7 @@ end
 
 depends 'php'
 depends 'composer'
+depends 'graphviz'
 
 recipe 'phpdoc', 'Installs phpdoc.'
 recipe 'phpdoc::composer', 'Installs phpdoc using composer.'
